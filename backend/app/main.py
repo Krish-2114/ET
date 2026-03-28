@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.routes import health, users, money_health_score
+from app.routes import health, users, money_health_score, fire
 
 app = FastAPI(
     title="AI Money Mentor API",
@@ -20,4 +20,4 @@ app.add_middleware(
 app.include_router(health.router, prefix="/api")
 app.include_router(users.router, prefix="/api")
 app.include_router(money_health_score.router, prefix="/api")
-
+app.include_router(fire.router, prefix="/api")
