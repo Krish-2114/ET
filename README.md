@@ -3,59 +3,70 @@
 Hackathon-ready, AI-powered personal finance platform for Indian users.
 
 ## Tech Stack
-
-- Frontend: Next.js (App Router) + TypeScript + Tailwind CSS
-- Backend: FastAPI (Python)
-- Database-ready backend structure with SQLAlchemy + PostgreSQL config
-- No Docker
+- **Frontend:** Next.js (App Router) + TypeScript + Tailwind CSS
+- **Backend:** FastAPI (Python)
+- **Database-ready:** SQLAlchemy + PostgreSQL config
+- **No Docker required**
 
 ## Project Structure
-
 - `frontend/` - Next.js app shell and module routes
 - `backend/` - FastAPI app with modular architecture
 - `shared/` - reserved for shared types/interfaces
 
-## Phase 1 Included
+## Features
 
-- Modular FastAPI backend (`routes/`, `services/`, `models/`, `schemas/`)
-- Health endpoint and mock user endpoints
-- Next.js dashboard shell and all required route pages
+### Phase 1 — Foundation
+- Modular FastAPI backend (routes, services, models, schemas)
+- Next.js dashboard shell with all module routes
 - Reusable UI components (cards, buttons, inputs)
 - Mock data system
 - Global financial disclaimer
 - Environment examples for frontend and backend
 
+### Phase 2 — Money Health Score
+- Multi-step financial health assessment
+- Scoring engine across 5 categories
+- Visual score display with Recharts
+
+### Phase 3 — FIRE Planner
+- FIRE corpus calculator (25x rule)
+- Inflation-adjusted projections
+- Monthly SIP needed to reach FIRE
+- Year-by-year corpus growth chart
+- Milestone cards (25%, 50%, 75%, 100%)
+- AI explanation of your FIRE plan
+
+### Phase 4 — Tax Wizard
+- FY 2024-25 old vs new regime comparison
+- Full deductions engine (80C, 80D, HRA, NPS, Home Loan)
+- Monthly in-hand salary calculator
+- Slab-by-slab breakdown
+- AI recommendation on which regime to pick
+
 ## Run Locally (No Docker)
 
-### 1) Backend
-
+### Backend
 ```bash
 cd backend
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 ```
+Backend: http://localhost:8000
+API Docs: http://localhost:8000/docs
 
-Backend URL: `http://localhost:8000`  
-Health check: `http://localhost:8000/api/health`
-
-### 2) Frontend
-
+### Frontend
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-
-Frontend URL: `http://localhost:3000`
+Frontend: http://localhost:3000
 
 ## Environment Files
-
 - Copy `backend/.env.example` to `backend/.env`
 - Copy `frontend/.env.example` to `frontend/.env.local`
 
-## Financial Note
-
-All values are in INR. Calculations and AI recommendations in future phases should be treated as educational guidance and not guaranteed outcomes.
-
+## Financial Disclaimer
+All values are in INR. All calculations and AI recommendations are for educational purposes only and should not be treated as financial advice or guaranteed outcomes.
