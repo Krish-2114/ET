@@ -1,0 +1,5 @@
+investor_name,folio_no,amc,scheme_name,isin,category,transaction_type,transaction_date,units,nav,amount,expense_ratio,current_nav
+Aarav Mehta,1234567,Axis Mutual Fund,Axis Bluechip Fund,INF846K01EW2,Large Cap,BUY,2023-01-10,100,45.20,4520,0.68,59.00
+Aarav Mehta,1234567,Axis Mutual Fund,Axis Bluechip Fund,INF846K01EW2,Large Cap,SIP,2023-05-10,50,47.80,2390,0.68,59.00
+Aarav Mehta,9988776,SBI Mutual Fund,SBI Small Cap Fund,INF200K01XY7,Small Cap,BUY,2024-02-15,70,82.00,5740,0.87,98.57
+Aarav Mehta,1122334,HDFC Mutual Fund,HDFC Flexi Cap Fund,INF179K01BB8,Flexi Cap,BUY,2024-08-20,80,61.50,4920,0.79,70.00
