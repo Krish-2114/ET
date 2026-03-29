@@ -2,7 +2,7 @@ from app.routes import health, users, money_health_score, fire, tax
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.routes import health, users, money_health_score, fire
+from app.routes import health, users, money_health_score, fire ,couple,life_event
 
 app = FastAPI(
     title="AI Money Mentor API",
@@ -24,3 +24,5 @@ app.include_router(money_health_score.router, prefix="/api")
 app.include_router(fire.router, prefix="/api")
 
 app.include_router(tax.router, prefix="/api")
+app.include_router(couple.router, prefix="/api/couple", tags=["Couple Planner"])
+app.include_router(life_event.router, prefix="/api/life-events", tags=["Life Events"])
