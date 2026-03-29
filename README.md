@@ -43,6 +43,15 @@ Hackathon-ready, AI-powered personal finance platform for Indian users.
 - Slab-by-slab breakdown
 - AI recommendation on which regime to pick
 
+### Phase 6 — Couple Planner
+-Income-Proportional Split: Automatically calculates fair expense sharing based on each partner's relative salary.
+-Joint Goal Sync: Maps out shared monthly SIP requirements for milestones like home buying or weddings.
+-Tax Optimization: Identifies the optimal partner to claim specific deductions to lower total household tax.
+
+### Phase 7: Life Event Advisor
+-Major Life Simulations: Instant advice for events like having a baby, switching jobs, or receiving a bonus.
+-Risk Mitigation Recommendation: Flags "Hidden Risks" like lifestyle creep or liquidity gaps during unpaid leave.
+-FIRE Impact Analysis: Estimates how specific events will either speed up or delay your retirement timeline.
 ## Run Locally (No Docker)
 
 ### Backend
